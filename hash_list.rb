@@ -13,4 +13,10 @@ list_of_people = [
   { :name => "Fatimah", :age => 31 },
   { :name => "Carl", :age => 9 },
 ]
+n=list_of_people.count
+n.times do |index|
+  if list_of_people.at(index).fetch(:age) >= 16
+    p list_of_people.at(index).fetch(:name)
 
+  end
+  end
